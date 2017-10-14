@@ -30,3 +30,90 @@ h1{
 	font-family: "Humblle";
 	font-size: 32px;
 }
+
+/*
+------------------------------
+		DISEÑO 3D
+------------------------------
+*/
+
+#video3d{
+	padding: 65px 0px;
+	background-image: url('../../img/bg_video3d.jpg');
+	background-size: cover;
+	background-position: center;
+}
+	#video3d .col-sm-6:nth-child(1){
+		padding-left: 50px;
+	}
+		#video3d .huevo{
+			margin-left: 100px;
+			position: relative;
+			z-index: 2;
+		}
+		#video3d .circulo_huevo{
+			width: 370px;
+			height: 370px;
+			background-color: #fe7878;
+			z-index: 1;
+			position: absolute;
+			top: 5px;
+			border-radius: 50%;
+		}
+
+	#video3d .texto_video3d{
+		font-family: "Humblle";
+		color: #333;
+	}
+	#video3d .texto_video3d{
+		position: relative;
+		margin-top: -20px;
+		margin-left: -30px;
+	}
+		#video3d .texto_video3d span{
+			display: block;
+			transform: rotate(-5deg);
+		}
+			#video3d .texto_video3d span:nth-child(1){
+				font-size: 56px;
+				margin-left: -50px;
+			}
+			#video3d .texto_video3d span:nth-child(2){
+				font-size: 88px;
+				margin-top: -30px;
+				color: #fe7878;
+			}
+			#video3d .texto_video3d span:nth-child(3){
+				font-size: 222px;
+				position: absolute;
+				right: 80px;
+				top: -40px;
+			}
+			#video3d .texto_video3d span:nth-child(4){
+				font-size: 82px;
+				margin-top: -30px;
+			}
+			#video3d .texto_video3d span:nth-child(5){
+				font-size: 242px;
+				margin-top: -100px;
+				margin-left: 40px;
+				position: relative;
+			}
+				#video3d .texto_video3d span:nth-child(5):before{
+					content: "3D";
+					z-index: -1;
+					position: absolute;
+					left: -6px;
+					top: -6px;
+					color: cyan;
+					opacity: .7;
+				}
+				#video3d .texto_video3d span:nth-child(5):after{
+					content: "3D";
+					z-index: -2;
+					position: absolute;
+					left: 6px;
+					top: 6px;
+					color: red;
+					opacity: .7;
+				}
