@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Humblle";
+    src: url(font/Humblle.ttf) format("truetype");
+}
+
+h1{
+	font-family: "Humblle";
+	font-size: 32px;
+}
