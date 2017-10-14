@@ -6,7 +6,11 @@
 @font-face {font-family: "AleoRegular"; src: url(font/Aleo/Regular/aleo-regular-webfont.ttf) format("truetype");}
 @font-face {font-family: "AleoRegularItalic"; src: url(font/Aleo/RegularItalic/aleo-italic-webfont.ttf) format("truetype");}
 
-@import url('https://fonts.googleapis.com/css?family=Abel');
+@font-face {font-family: "EconomicaBold"; src: url(font/Economica-Bold.otf) format("opentype");}
+@font-face {font-family: "EconomicaBoldItalic"; src: url(font/Economica-BoldItalic.otf) format("opentype");}
+@font-face {font-family: "EconomicaItalic"; src: url(font/Economica-Italic.otf) format("opentype");}
+@font-face {font-family: "EconomicaRegular"; src: url(font/Economica-Regular.otf) format("opentype");}
+
 
 /*
 ------------------------------
@@ -23,10 +27,17 @@
 			font-family: "AleoRegular";
 			font-family: "AleoRegularItalic";
 	Cuerpo
-			font-family: 'Abel', sans-serif;
+			font-family: 'EconomicaBold';
+			font-family: 'EconomicaBoldItalic';
+			font-family: 'EconomicaItalic';
+			font-family: 'EconomicaRegular';
 
 */
 
+body{
+	font-family: 'EconomicaRegular';
+	font-size: 14px;
+}
 
 /*
 ------------------------------
@@ -605,6 +616,7 @@
 	width: 100%;
 	/*background-color: red;*/
 	color: #fff;
+	overflow: hidden;
 }
 	#videos .oscurecer {
 	    width: 100%;
@@ -651,9 +663,9 @@
 				color: #f1c40f;
 			}
 	#videos .texto_explicacion{
-		font-family: 'TheLight';
 		font-size: 33px;
 		margin-top: 100px;
+		font-weight: 300;
 		text-transform: uppercase;
 	}
 
@@ -685,11 +697,11 @@
 		#videos .explicacion_corto ul .cargo{
 			font-family: "AleoRegular";
 			text-transform: uppercase;
-			font-size: 13px;
+			font-size: 12px;
 			opacity: .65;
 		}
 		#videos .explicacion_corto ul .persona_cargo{
-			font-size: 20px;
+			font-size: 24px;
 		}
 	#videos .explicacion_corto .btn-default{
 		background-color: transparent;
@@ -697,8 +709,73 @@
 		min-width: 120px;
 		margin-left: 40px;
 		transition-duration: .4s;
+		text-transform: uppercase;
 	}
 		#videos .explicacion_corto .btn-default:hover{
 			background-color: #fff;
 			color: #333;
 		}
+
+#videos .lista_videos{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(20,20,20,.75);
+	bottom: 0;
+	margin: 0px;
+}
+	#videos .lista_videos .cont_lista{
+		width: 23%;
+		height: 100%;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+		#videos .lista_videos .video_item{
+			display: inline-block;
+			width: 125px;
+			height: 100%;
+			background-color: blue;
+			position: relative;
+			margin-top: 10px;
+			background-size: cover;
+			background-position: center;
+		}
+			#videos .lista_videos .video_item:before{
+				content: "";
+				width: 100%;
+				height: 4px;
+				/*background-color: green;*/
+				position: absolute;
+				top: 0;
+				margin-top: -7px;
+			}
+			#videos .lista_videos .video_item:nth-child(1):before{
+				background-color: #999127;
+			}
+			#videos .lista_videos .video_item:nth-child(2):before{
+				background-color: #962a29;
+			}
+			#videos .lista_videos .video_item:nth-child(3):before{
+				background-color: #3e8a2d;
+			}
+			#videos .lista_videos .video_item:nth-child(4):before{
+				background-color: #2c938d;
+			}
+			#videos .lista_videos .video_item:nth-child(5):before{
+				background-color: #999127;
+			}
+			#videos .lista_videos .video_item:nth-child(6):before{
+				background-color: #962a29;
+			}
+			#videos .lista_videos .video_item:nth-child(7):before{
+				background-color: #3e8a2d;
+			}
+			#videos .lista_videos .video_item:nth-child(8):before{
+				background-color: #2c938d;
+			}
+			#videos .lista_videos .video_item:nth-child(9):before{
+				background-color: #999127;
+			}
+			#videos .lista_videos .video_item:nth-child(10):before{
+				background-color: #962a29;
+			}
