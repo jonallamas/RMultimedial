@@ -1,7 +1,30 @@
-@font-face {
-    font-family: "Humblle";
-    src: url(font/Humblle.ttf) format("truetype");
-}
+@font-face {font-family: "Humblle"; src: url(font/Humblle.ttf) format("truetype");}
+@font-face {font-family: "AleoBold"; src: url(font/Aleo/Bold/aleo-bold-webfont.ttf) format("truetype");}
+@font-face {font-family: "AleoBoldItalic"; src: url(font/Aleo/BoldItalic/aleo-bolditalic-webfont.ttf) format("truetype");}
+@font-face {font-family: "AleoLight"; src: url(font/Aleo/Light/aleo-light-webfont.ttf) format("truetype");}
+@font-face {font-family: "AleoLightItalic"; src: url(font/Aleo/LightItalic/aleo-lightitalic-webfont.ttf) format("truetype");}
+@font-face {font-family: "AleoRegular"; src: url(font/Aleo/Regular/aleo-regular-webfont.ttf) format("truetype");}
+@font-face {font-family: "AleoRegularItalic"; src: url(font/Aleo/RegularItalic/aleo-italic-webfont.ttf) format("truetype");}
+
+
+/*
+------------------------------
+		TIPOGRAFÍAS
+------------------------------
+	Títulos
+			font-family: "Humblle";
+
+	Subtítulos
+			font-family: "AleoBold";
+			font-family: "AleoBoldItalic";
+			font-family: "AleoLight";
+			font-family: "AleoLightItalic";
+			font-family: "AleoRegular";
+			font-family: "AleoRegularItalic";
+	Cuerpo
+			font-family: " ";
+
+*/
 
 h1{
 	font-family: "Humblle";
