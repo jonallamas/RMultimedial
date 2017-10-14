@@ -594,3 +594,111 @@
 	right: -132%;
 	transform: scaleX(-1);
 }
+
+/*
+------------------------------
+		VIDEOS
+------------------------------
+*/
+#videos{
+	height: 100%;
+	width: 100%;
+	/*background-color: red;*/
+	color: #fff;
+}
+	#videos .oscurecer {
+	    width: 100%;
+	    height: 100%;
+	    /*background-color: rgba(0, 0, 0, 0.5);*/
+	}
+	#videos .textura{
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		position: fixed;
+		background-image: url('../video/textura.png');
+		opacity: .5;
+	}	
+	#videos #video_primero{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -1;
+		transform: translateX(-50%) translateY(-50%);
+		background-image: url('../video/video_primero.jpg');
+		background-size: cover;
+		transition: 1s opacity;
+		filter: blur(10px);
+	}
+
+
+#videos .explicacion_muestra{
+	padding-top: 75px;
+}
+	#videos h1{
+		font-family: "Humblle";
+		font-size: 55px;
+		transform: rotate(-5deg);
+	}
+		#videos h1 .salto_linea{
+			font-size: 89px;
+		}
+			#videos .amarillo{
+				color: #f1c40f;
+			}
+	#videos .texto_explicacion{
+		font-family: 'TheLight';
+		font-size: 33px;
+		margin-top: 100px;
+		text-transform: uppercase;
+	}
+
+#videos .explicacion_corto{
+	padding-top: 125px;
+}
+	#videos .explicacion_corto h3{
+		font-size: 40px;
+		position: relative;
+		z-index: 2;
+	}
+		#videos .explicacion_corto .fondo_h3{
+			width: 100%;
+			height: 150px;
+			z-index: -1;
+			position: absolute;
+			left: -100px;
+			top: -50px;
+			background-image: url('../video/fondo_titulo.png');
+			background-repeat: no-repeat;
+		}
+#videos .explicacion_corto > ul{
+	margin-top: 75px;
+}
+	#videos .explicacion_corto ul li{
+		list-style: none;
+		margin-bottom: 15px;
+	}
+		#videos .explicacion_corto ul .cargo{
+			font-family: "AleoRegular";
+			text-transform: uppercase;
+			font-size: 13px;
+			opacity: .65;
+		}
+		#videos .explicacion_corto ul .persona_cargo{
+			font-size: 20px;
+		}
+	#videos .explicacion_corto .btn-default{
+		background-color: transparent;
+		color: #fff;
+		min-width: 120px;
+		margin-left: 40px;
+		transition-duration: .4s;
+	}
+		#videos .explicacion_corto .btn-default:hover{
+			background-color: #fff;
+			color: #333;
+		}
