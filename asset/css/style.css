@@ -63,6 +63,18 @@ h1{
 			top: 5px;
 			border-radius: 50%;
 		}
+		#video3d .programa{
+			font-family: 'Abel', sans-serif;
+			text-transform: uppercase;
+			vertical-align: middle;
+			color: #333333;
+			font-size: 10px;
+			text-align: center;
+			margin-top: 25px;
+		}
+			#video3d .programa img{
+				filter: grayscale(100%);
+			}
 
 	#video3d .texto_video3d{
 		font-family: "Humblle";
