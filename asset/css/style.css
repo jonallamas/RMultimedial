@@ -41,7 +41,7 @@ h1{
 #video3d{
 	width: 100%;
 	height: 100%;
-	padding: 75px 0px;
+	padding: 90px 0px;
 	background-image: url('../../img/bg_video3d.jpg');
 	background-size: cover;
 	background-position: center;
@@ -50,7 +50,7 @@ h1{
 		padding-left: 50px;
 	}
 		#video3d .huevo{
-			margin-left: 100px;
+			margin-left: 60px;
 			position: relative;
 			z-index: 2;
 		}
@@ -95,40 +95,78 @@ h1{
 			}
 			#video3d .texto_video3d span:nth-child(2){
 				font-size: 88px;
-				margin-top: -30px;
 				color: #fe7878;
+				margin-top: 50px;
+				margin-left: -25px;
 			}
 			#video3d .texto_video3d span:nth-child(3){
 				font-size: 222px;
 				position: absolute;
-				right: 80px;
-				top: -40px;
+				margin-left: 350px;
 			}
 			#video3d .texto_video3d span:nth-child(4){
 				font-size: 82px;
-				margin-top: -30px;
+				margin-top: 150px;
+				margin-left: -50px;
 			}
 			#video3d .texto_video3d span:nth-child(5){
 				font-size: 242px;
-				margin-top: -100px;
-				margin-left: 40px;
 				position: relative;
+				margin-top: 150px;
 			}
 				#video3d .texto_video3d span:nth-child(5):before{
 					content: "3D";
 					z-index: -1;
 					position: absolute;
-					left: -6px;
-					top: -6px;
+					left: -4px;
+					top: -4px;
 					color: cyan;
 					opacity: .7;
+					animation: shakecyan 0.3s cubic-bezier(.36,.07,.19,.97) both infinite;
 				}
 				#video3d .texto_video3d span:nth-child(5):after{
 					content: "3D";
 					z-index: -2;
 					position: absolute;
-					left: 6px;
-					top: 6px;
+					left: 3px;
+					top: 3px;
 					color: red;
 					opacity: .7;
+					animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both infinite;
 				}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+@keyframes shakecyan {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
