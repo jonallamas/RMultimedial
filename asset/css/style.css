@@ -6,6 +6,7 @@
 @font-face {font-family: "AleoRegular"; src: url(font/Aleo/Regular/aleo-regular-webfont.ttf) format("truetype");}
 @font-face {font-family: "AleoRegularItalic"; src: url(font/Aleo/RegularItalic/aleo-italic-webfont.ttf) format("truetype");}
 
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 /*
 ------------------------------
@@ -27,7 +28,7 @@
 */
 
 h1{
-	font-family: "Humblle";
+	font-family: 'Abel', sans-serif;
 	font-size: 32px;
 }
 
@@ -38,7 +39,9 @@ h1{
 */
 
 #video3d{
-	padding: 65px 0px;
+	width: 100%;
+	height: 100%;
+	padding: 75px 0px;
 	background-image: url('../../img/bg_video3d.jpg');
 	background-size: cover;
 	background-position: center;
