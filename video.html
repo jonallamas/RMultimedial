@@ -9,6 +9,30 @@
 </head>
 <body>
 
+	<section id="video3d">
+		<div class="container" id="container">
+			<div class="row" id="scene">
+				<div class="col-sm-6">
+					<img src="img/huevo.png" class="huevo img-responsive layer text-center" alt="" data-depth="0.35">
+					<div class="circulo_huevo layer" data-depth="0.15"></div>
+					<div class="programa">
+						<span>Con la tecnología de</span>
+						<img src="img/logo_blender.png" width="100px;" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="texto_video3d">
+						<span class="layer" data-depth="0.10">Descubre el mundo del</span>
+						<span class="layer" data-depth="0.20">modelado</span>
+						<span class="layer" data-depth="0.30">y</span>
+						<span class="layer" data-depth="0.15">animaciones</span>
+						<span class="layer" data-depth="0.35">3D</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="videos">
 		<div class="textura">
 			<div class="oscurecer"></div>
@@ -50,13 +74,100 @@
 		<div class="lista_videos">
 			<div class="cont_lista">
 				<div class="video_item" style="background-image: url('asset/video/video_primero.jpg');"></div>
-				<div class="video_item"></div>
+				<div class="video_item" style="background-image: url('asset/video/video_segundo.jpg');"></div>
 			</div>
 		</div>
 	</section>
+
+	<section id="programacion">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="" alt="">
+					<div class="rotacion">
+						<h3 class="subtitulo">Está a la vanguardia en</h3>
+						<h2 class="titulo">Diseño web</h2>
+					</div>
+					<h3 class="subtitulo">Aprendiendo sobre</h3>
+					<ul>
+						<li><span class="pintura"></span>Web responsive</li>
+						<li><span class="pintura"></span>Usabilidad y funcionalidad</li>
+						<li><span class="pintura"></span>Diseños estáticos y dinamicos</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 mockup">
+					<div class="cd-product-mockup" id="float">
+						<img src="img/imagen.jpg"  class="img-responsive" alt="">
+						<div class="cd-3d-right-side"></div>
+						<div class="cd-3d-bottom-side"></div>
+					</div>
+					<div class="sombra" id="sombra"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container contenedor-dos">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="cd-product-mockup" id="float-dos">
+						<img src="img/imagen.jpg"  class="img-responsive" alt="">
+						<div class="cd-3d-right-side"></div>
+						<div class="cd-3d-bottom-side"></div>
+					</div>
+					<div class="sombra" id="sombra"></div>
+				</div>
+				<div class="col-sm-6 text-right">
+					<img src="" alt="">
+					<div class="rotacion">
+						<h3 class="subtitulo">Utiliza frameworks de </h3>
+						<h2 class="titulo">Programación</h2>
+					</div>
+					<ul>
+						<li><span class="pintura"></span>Jquery</li>
+						<li><span class="pintura"></span>Bootstrap</li>
+						<li><span class="pintura"></span>Codeigniter</li>
+						<li><span class="pintura"></span>Framework 7</li>
+						<li><span class="pintura"></span>Y muchos mas</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<!-- Parallax -->
+	<script src="asset/js/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
 	
 	<script src="asset/bootstrap/js/jquery.min.js"></script>
 	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
 	<script src="asset/js/main.js"></script>
+	<script src="asset/js/jqfloat.js"></script>
+
+	<script>
+		var baloon = $('#float');
+		var baloonDos = $('#float-dos') 
+   		function runIt() {
+   		    baloon.animate({top:'+=10'}, 1000);
+   		    baloon.animate({top:'-=10'}, 1000, runIt);
+   		    baloonDos.animate({top:'-=10'}, 1000);
+   		    baloonDos.animate({top:'+=10'}, 1000, runIt);
+   		}
+		
+   		runIt();
+
+   		
+	</script>
+
 </body>
 </html>
