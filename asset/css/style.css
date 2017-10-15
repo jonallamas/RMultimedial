@@ -11,6 +11,12 @@
 @font-face {font-family: "EconomicaItalic"; src: url(font/Economica-Italic.otf) format("opentype");}
 @font-face {font-family: "EconomicaRegular"; src: url(font/Economica-Regular.otf) format("opentype");}
 
+@font-face {font-family: "PierBlack"; src: url(font/PierSans/PierSans-Black.otf) format("opentype");}
+@font-face {font-family: "PierBlackItalic"; src: url(font/PierSans/PierSans-BlackItalic.otf) format("opentype");}
+@font-face {font-family: "PierBold"; src: url(font/PierSans/PierSans-Bold.otf) format("opentype");}
+@font-face {font-family: "PierBoldItalic"; src: url(font/PierSans/PierSans-BoldItalic.otf) format("opentype");}
+
+
 
 /*
 ------------------------------
@@ -780,3 +786,107 @@ body{
 			#videos .lista_videos .video_item:nth-child(10):before{
 				background-color: #962a29;
 			}
+
+
+/*
+------------------------------
+		NOSOTROS
+------------------------------
+*/
+
+#nosotros{
+	height: 650px;
+	padding: 80px 0px;
+	background-color: #292929;
+	background-image: url('../../img/patron.png');
+	
+}
+
+#nosotros h1{
+	font-family: "PierBlackItalic";
+	color: white;
+	transform: rotate(-5deg);
+	position: relative;
+	text-transform: uppercase;
+}
+
+#nosotros h1 span{
+	background-image: url('../../img/pintura2.png');
+	width: 100%;
+	height: 150px;
+	z-index: -1;
+	position: absolute;
+	transform: scale(.8);
+	left: -150px;
+	top: -45px;
+	background-repeat: no-repeat;
+}
+
+#nosotros .cont-caras{
+	margin-top: 200px;
+	color: white;
+}
+#nosotros .cont-img{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	/*z-index: 3;*/
+}
+
+#nosotros .cont-img .blur{
+	filter: blur(3px);
+	opacity: 1;
+	transition: all 0.3s ease 0s;
+}
+
+#nosotros .cont-img .color{
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+#nosotros .cont-img:hover .blur{
+	opacity: 0;
+}
+
+#nosotros .cont-img:hover .color{
+	opacity: 1;
+}
+
+#nosotros .cont-caras .cont-info{
+	position: relative;
+	z-index: 2;
+	width: 150px;
+	display: inline-block;
+	bottom: -50px;
+	right: 25px;
+}
+
+#nosotros .cont-caras .cont-info .nombre{
+	font-family: "PierBold";
+	font-size: 30px;
+	line-height: 30px;
+}
+
+#nosotros .cont-caras .cont-info .profesion{
+	font-family: "AleoLight";
+	font-size: 20px;
+	color: #a59385;
+}
+
+#nosotros .cont-caras .gaston img{
+	position: absolute;
+	height: 250px;
+	right: 25%;
+	z-index: 1;
+}
+
+#nosotros .cont-caras .joni{
+	margin-top: -120px;
+}
+
+#nosotros .cont-caras .joni img{
+	position: absolute;
+	left: 25%;
+	z-index: 1;
+}
+

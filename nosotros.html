@@ -2,130 +2,68 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Téc en Realización Multimedial</title>
+	<title>Programacion</title>
 	<link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="asset/css/style.css">
 	<link rel="stylesheet" href="asset/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="asset/css/demo-switch.css" />
-	<link rel="stylesheet" href="asset/css/normalize.css" />
-	<link rel="stylesheet" href="asset/css/demo.css" />
-	<link rel="stylesheet" href="asset/css/pater.css" />
-	<script>document.documentElement.className = 'js';</script>
 </head>
 <body>
 
-	<div class="demo-switch">
+	
+	<section id="nosotros">
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>hola mundo</h1>
+					<h1><span></span>Trabajo realizado por</h1>
+				</div>
+			</div>
+			<div class="row cont-caras">
+				<div class="col-sm-4 gaston">
+					<div class="cont-img">
+						<img class="blur" src="img/gaston_bn.png" alt="">
+						<img class="color" src="img/gaston_color.png" alt="">
+					</div>
+					<div class="cont-info text-right">
+						<span class="nombre ">Gastón<br> Acuña</span><br>
+						<span class="profesion">Estudiante</span>
+					</div>
+				</div>
+				<div class="col-sm-4 joni">
+					<div class="cont-img ">
+						<img class="blur" src="img/joni_bn.png" alt="">
+						<img class="color" src="img/joni_color.png" alt="">
+					</div>
+					<div class="cont-info text-right">
+						<span class="nombre">Jonathan<br> Llamas</span><br>
+						<span class="profesion">Estudiante</span>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content">
-			
-			<div class="slideshow">
-				<div id="slide-1" class="slide" style="background-image: url(img/2d.jpg)"></div>
-				<div id="slide-2" class="slide" style="background-image: url(img/3d.jpg)"></div>
-				<div id="slide-3" class="slide" style="background-image: url(img/4d.jpg)"></div>
-				<div id="slide-4" class="slide" style="background-image: url(img/1d.jpg)"></div>
-				<div class="pieces" style="background-image: url(img/2d.jpg)"></div>
-			</div>
-			<nav class="menu">
-				<a class="menu__item menu__item--current" href="#slide-1" data-image="img/2d.jpg">Gastón Acuña <span>Estudiante</span></a>
-				<a class="menu__item" href="#slide-2" data-image="img/3d.jpg">Jonathan Llamas <span>Estudiante</span></a>
-				<a class="menu__item" href="#slide-3" data-image="img/1d.jpg">Nicolas Aguilar <span>Estudiante</span></a>
-			</nav>
-		</div>
-	</div>
 	
-		
+
+	</section>
 	
 	<script src="asset/bootstrap/js/jquery.min.js"></script>
 	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
-
 	<script src="asset/js/main.js"></script>
-	<script src="asset/js/pater.js"></script>
-	<script src="asset/js/imagesloaded.pkgd.min.js"></script>
-	<script src="asset/js/anime.min.js"></script>
-	<script src="asset/js/main2.js"></script>
+	<script src="asset/js/jqfloat.js"></script>
+
 	<script>
-	{
-		imagesLoaded(document.body, { background: true }, () => document.body.classList.remove('loading'));
+		var baloon = $('#float');
+		var baloonDos = $('#float-dos') 
+   		function runIt() {
+   		    baloon.animate({top:'+=10'}, 1000);
+   		    baloon.animate({top:'-=10'}, 1000, runIt);
+   		    baloonDos.animate({top:'-=10'}, 1000);
+   		    baloonDos.animate({top:'+=10'}, 1000, runIt);
+   		}
 		
-		const menuItems = Array.from(document.querySelectorAll('.menu > .menu__item'));
-		
-		const piecesObj = new Pieces(document.querySelector('.slideshow > .pieces'), {
-			pieces: {rows: 14, columns: 12},
-			delay: [0,40],
-			hasTilt: true,
-			tilt: {
-				maxRotationX: -1, 
-				maxRotationY: -1, 
-				maxTranslationX: -5, 
-				maxTranslationY: -2
-			}
-		});
-		
-		let isAnimating = false;
-		let current = 0;
+   		runIt();
 
-		const openImage = (ev, item, pos) => {
-			ev.preventDefault();
-			if ( isAnimating || current === pos ) {
-				return false;
-			}
-			isAnimating = true;
-			menuItems[current].classList.remove('menu__item--current');
-			current = pos;
-			menuItems[current].classList.add('menu__item--current');
-			const imgsrc = item.dataset.image;
-
-			piecesObj.animate({
-				duration: 200,
-				easing: 'easeOutQuad',
-				delay: (t,i,l) => {
-					return parseInt(t.dataset.row) * parseInt(t.dataset.delay);
-				},
-				translateX: (t,i) => {
-					return anime.random(-50,50)+'px';
-				},
-				translateY: (t,i) => { 
-					return anime.random(-800,-200)+'px';
-				},
-				rotateZ: (t,i) => { 
-					return anime.random(-45,45)+'deg';
-				},
-				opacity: 0,
-				complete: () => {
-					piecesObj.setImage(imgsrc);
-
-					piecesObj.animate({
-						duration: 500,
-						easing: [0.3,1,0.3,1],
-						delay: (t,i,l) => {
-							return parseInt(t.dataset.row) * parseInt(t.dataset.delay);
-						},
-						translateX: 0,
-						translateY: () => {
-							return [anime.random(200,800)+'px','0px'];
-						},
-						rotateZ: 0,
-						opacity: {
-							value: 1,
-							duration: 500,
-							easing: 'linear'
-						},
-						complete: () => {
-							isAnimating = false;
-						}
-					});
-				}
-			});
-		};
-
-		menuItems.forEach((item,pos) => item.addEventListener('click', (ev) => openImage(ev,item,pos)));
-	}
+   		
 	</script>
+
 </body>
 </html>
