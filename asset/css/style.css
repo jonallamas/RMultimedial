@@ -1,52 +1,39 @@
 @font-face {font-family: "Humblle"; src: url(font/Humblle.ttf) format("truetype");}
-@font-face {font-family: "AleoBold"; src: url(font/Aleo/Bold/aleo-bold-webfont.ttf) format("truetype");}
-@font-face {font-family: "AleoBoldItalic"; src: url(font/Aleo/BoldItalic/aleo-bolditalic-webfont.ttf) format("truetype");}
-@font-face {font-family: "AleoLight"; src: url(font/Aleo/Light/aleo-light-webfont.ttf) format("truetype");}
-@font-face {font-family: "AleoLightItalic"; src: url(font/Aleo/LightItalic/aleo-lightitalic-webfont.ttf) format("truetype");}
-@font-face {font-family: "AleoRegular"; src: url(font/Aleo/Regular/aleo-regular-webfont.ttf) format("truetype");}
-@font-face {font-family: "AleoRegularItalic"; src: url(font/Aleo/RegularItalic/aleo-italic-webfont.ttf) format("truetype");}
 
-@font-face {font-family: "EconomicaBold"; src: url(font/Economica-Bold.otf) format("opentype");}
-@font-face {font-family: "EconomicaBoldItalic"; src: url(font/Economica-BoldItalic.otf) format("opentype");}
-@font-face {font-family: "EconomicaItalic"; src: url(font/Economica-Italic.otf) format("opentype");}
-@font-face {font-family: "EconomicaRegular"; src: url(font/Economica-Regular.otf) format("opentype");}
+@font-face {font-family: "AleoBold"; src: url(font/Aleo/Bold/aleo-bold-webfont.ttf) format("truetype");}
 
 @font-face {font-family: "PierBlack"; src: url(font/PierSans/PierSans-Black.otf) format("opentype");}
 @font-face {font-family: "PierBlackItalic"; src: url(font/PierSans/PierSans-BlackItalic.otf) format("opentype");}
 @font-face {font-family: "PierBold"; src: url(font/PierSans/PierSans-Bold.otf) format("opentype");}
 @font-face {font-family: "PierBoldItalic"; src: url(font/PierSans/PierSans-BoldItalic.otf) format("opentype");}
-@font-face {font-family: "PierItalic"; src: url(font/PierSans/PierSans-Italic.otf) format("opentype");}
+/*@font-face {font-family: "PierItalic"; src: url(font/PierSans/PierSans-Italic.otf) format("opentype");}
 @font-face {font-family: "PierLight"; src: url(font/PierSans/PierSans-Light.otf) format("opentype");}
 @font-face {font-family: "PierLightItalic"; src: url(font/PierSans/PierSans-LightItalic.otf) format("opentype");}
 @font-face {font-family: "PierMedium"; src: url(font/PierSans/PierSans-Medium.otf) format("opentype");}
 @font-face {font-family: "PierMediumItalic"; src: url(font/PierSans/PierSans-MediumItalic.otf) format("opentype");}
 @font-face {font-family: "PierRegular"; src: url(font/PierSans/PierSans-Regular.otf) format("opentype");}
-
+*/
 
 /*
 ------------------------------
 		TIPOGRAFÍAS
 ------------------------------
-	Títulos
+	Títulos - SÓLO DISEÑO 3D
 			font-family: "Humblle";
+
+	Título
+			font-family: "PierBlackItalic";
 
 	Subtítulos
 			font-family: "AleoBold";
-			font-family: "AleoBoldItalic";
-			font-family: "AleoLight";
-			font-family: "AleoLightItalic";
-			font-family: "AleoRegular";
-			font-family: "AleoRegularItalic";
+
 	Cuerpo
-			font-family: 'EconomicaBold';
-			font-family: 'EconomicaBoldItalic';
-			font-family: 'EconomicaItalic';
-			font-family: 'EconomicaRegular';
+			font-family: 'AleoLight';
 
 */
 
 body{
-	font-family: 'EconomicaRegular';
+	font-family: 'AleoLight';
 	font-size: 14px;
 }
 
@@ -217,22 +204,23 @@ body{
 }
 
 #programacion .rotacion .subtitulo{
-	font-family: "AleoRegular";
+	font-family: "AleoBold";
 	color: #444;
 	font-size: 36px;
 	margin: 0px;
 }
 
 #programacion .rotacion .titulo{
-	font-family: "Humblle";
+	font-family: "PierBlackItalic";
+	text-transform: uppercase;
 	color: #70A883;
-	font-size: 89px;
+	font-size: 69px;
 	margin: 0px;
-	margin-top: -23px;
+	margin-top: 5px;
 }
 
 #programacion .subtitulo{
-	font-family: "AleoRegular";
+	font-family: "AleoBold";
 	color: #444;
 	font-size: 36px;
 	margin: 0px;
@@ -250,7 +238,7 @@ body{
 #programacion ul li{
 	list-style: none;/*
 	list-style-image: url('../../img/pintura.png');*/
-	font-family: 'Abel', sans-serif;
+	font-family: 'AleoLight', sans-serif;
 	font-size: 28px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -631,7 +619,7 @@ body{
 	overflow: hidden;
 	position: relative;
 }
-	#videos .separacion_video_sup{
+		#videos .separacion_video_sup{
 		transform: rotate(180deg);
 		width: 100%;
 		height: 130px;
@@ -686,12 +674,13 @@ body{
 	padding-top: 75px;
 }
 	#videos h1{
-		font-family: "Humblle";
-		font-size: 55px;
+		font-family: "PierBlackItalic";
+		text-transform: uppercase;
+		font-size: 45px;
 		transform: rotate(-5deg);
 	}
 		#videos h1 .salto_linea{
-			font-size: 89px;
+			font-size: 69px;
 		}
 			#videos .amarillo{
 				color: #f1c40f;
@@ -700,7 +689,7 @@ body{
 		font-size: 33px;
 		margin-top: 100px;
 		font-weight: 300;
-		text-transform: uppercase;
+		line-height: 35px;
 	}
 
 #videos .explicacion_corto{
@@ -729,7 +718,7 @@ body{
 		margin-bottom: 15px;
 	}
 		#videos .explicacion_corto ul .cargo{
-			font-family: "AleoRegular";
+			font-family: "AleoBold";
 			text-transform: uppercase;
 			font-size: 12px;
 			opacity: .65;
@@ -744,6 +733,7 @@ body{
 		margin-left: 40px;
 		transition-duration: .4s;
 		text-transform: uppercase;
+		font-size: 11px;
 	}
 		#videos .explicacion_corto .btn-default:hover{
 			background-color: #fff;
