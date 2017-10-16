@@ -869,16 +869,16 @@ body{
 }
 #viruska .separacion_viruska_sup{
 	width: 100%;
-	height: 410px;
-	background-image: url('../../img/separacion_viruska.png');
+	height: 401px;
+	background-image: url('../../img/separacion_viruska_v2.png');
 	top: -350px;
 	z-index: -2;
 	position: absolute;
 }
 #viruska .separacion_viruska_inf{
 	width: 100%;
-	height: 410px;
-	background-image: url('../../img/separacion_viruska.png');
+	height: 401px;
+	background-image: url('../../img/separacion_viruska_v2.png');
 	bottom: -350px;
 	z-index: -2;
 	position: absolute;
