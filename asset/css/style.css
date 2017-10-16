@@ -645,7 +645,7 @@ body{
 		opacity: .5;
 	}	
 	#videos #video_primero{
-		position: absolute;;
+		position: absolute;
 		top: 50%;
 		left: 50%;
 		min-width: 100%;
@@ -792,6 +792,35 @@ body{
 			#videos .lista_videos .video_item:nth-child(10):before{
 				background-color: #962a29;
 			}
+
+#videos .modal-content{
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	margin-top: 50px;
+}
+
+#videos .modal .modal-header{
+	background-color: transparent;
+	border: none;
+}
+
+#videos .modal .modal-header .close{
+	color: white;
+	font-size: 50px;
+	line-height: 10px;
+	height: 10px;
+	opacity: 1;
+	font-weight: 500;
+	position: absolute;
+	/*top: -50px;*/
+	right: 35px;
+	padding: 0px;
+}
+
+#videos .modal .modal-body video{
+	margin: 0px 50px;
+}
 
 
 /*
