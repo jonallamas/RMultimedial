@@ -1021,7 +1021,30 @@ body{
 #nosotros .cont-caras{
 	margin-top: 200px;
 	color: white;
+	transform: scale(.9);
 }
+
+#nosotros .cont-caras .cont-img .apodo{
+	font-family: "PierBlack";
+	color: #908882;
+	font-size: 80px;
+	position: absolute;
+	top: -65px;
+	opacity: .5;
+	left: 50px;
+	text-transform: uppercase;
+	filter: blur(0px);
+	transition: all 0.1s ease 0s;
+}
+
+#nosotros .joni .apodo{
+	left: 75px;
+}
+
+#nosotros .cont-caras .cont-img:hover .apodo{
+	filter: blur(8px);
+}
+
 #nosotros .cont-img{
 	position: relative;
 	width: 100%;
@@ -1048,6 +1071,14 @@ body{
 	opacity: 1;
 }
 
+#nosotros .cont-img:hover + .cont-info{
+	filter: blur(3px);
+}
+
+#nosotros .cont-img:hover + .cont-info .profesion{
+	filter: grayscale(1);
+}
+
 #nosotros .cont-caras .cont-info{
 	position: relative;
 	z-index: 2;
@@ -1055,6 +1086,7 @@ body{
 	display: inline-block;
 	bottom: -70px;
 	right: 20px;
+	transition: all 0.3s ease 0s;
 }
 
 #nosotros .cont-caras .cont-info .nombre{
