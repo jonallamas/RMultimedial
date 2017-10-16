@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion</title>
+	<link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+
+	<style>
+		.ala1{
+			display: none;
+		}
+	</style>
+
+	
+	<div id="hover">hover</div>
+	<div class="ala1">hola mundo</div>
+	
+	<script src="asset/bootstrap/js/jquery.min.js"></script>
+	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+	<script src="asset/js/main.js"></script>
+	<script src="asset/js/jqfloat.js"></script>
+
+	<script>
+		 $('#hover').hover(function() {
+        $(this).find('.ala1').delay(25).fadeIn(200);
+      }, function() {
+        $(this).find('.ala1').delay(25).fadeOut(200);
+      });
+	</script>
+
+</body>
+</html>

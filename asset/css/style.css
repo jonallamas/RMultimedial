@@ -857,8 +857,8 @@ body{
 	z-index: 2;
 	width: 150px;
 	display: inline-block;
-	bottom: -50px;
-	right: 25px;
+	bottom: -70px;
+	right: 20px;
 }
 
 #nosotros .cont-caras .cont-info .nombre{
@@ -880,6 +880,33 @@ body{
 	z-index: 1;
 }
 
+#nosotros .cont-caras .gaston .cont-info{
+	right: 35px;
+}
+
+#nosotros .cont-caras .gaston .cont-img .alas{
+	position: absolute;
+	z-index: 4;
+	transform: scale(.7);
+	right: -130px;
+	top: -65px;
+	opacity: 0;
+	transition: all 0.1s ease 0s;
+}
+
+#nosotros .cont-caras .gaston .cont-img:hover .alas{
+	opacity: 1;
+	animation-name: alas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes alas {
+    0%{margin-top: 20px;}
+    50%{margin-top: 0px;}
+    100%{margin-top: 20px;}
+}
+
 #nosotros .cont-caras .joni{
 	margin-top: -120px;
 }
@@ -890,3 +917,39 @@ body{
 	z-index: 1;
 }
 
+#nosotros .cont-caras .joni .cont-img .parche{
+	position: absolute;
+	z-index: 4;
+	left: 110px;
+	top: 95px;
+	opacity: 0;
+	transition: all 0.1s ease 0s;
+}
+
+#nosotros .cont-caras .joni .cont-img:hover .parche{
+	opacity: 1;
+	
+}
+
+@keyframes parche {
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(5deg);}
+}
+
+#nosotros .cont-caras .joni .cont-img .pirata{
+	position: absolute;
+	z-index: 4;
+	left: 100px;
+	height: 90px;
+	top: -30px;
+	opacity: 0;
+	transition: all 0.1s ease 0s;
+}
+
+#nosotros .cont-caras .joni .cont-img:hover .pirata{
+	opacity: 1;
+	animation-name: parche;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
