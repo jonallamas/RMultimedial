@@ -239,7 +239,7 @@ body{
 #programacion ul{
 	margin-top: 20px;
 	margin-left: 90px;
-	
+	/*color: #555;*/
 }
 
 #programacion ul li{
@@ -267,7 +267,6 @@ body{
 
 #programacion ul .pintura{
 	background-image: url('../../img/pintura.png');
-	/*background-size: cover;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	padding: 18px 65px;
@@ -475,7 +474,7 @@ body{
 	color: #f0f0f0;
 	font-weight: bold;
 	right: 120px;
-	bottom: 130px;
+	bottom: 280px;
 }
 
 .contenedor-dos h2{
@@ -608,6 +607,7 @@ body{
 }
 
 .contenedor-dos ul .pintura{
+	background-image: url(../../img/pintura1.png) !important;
 	left: 0;
 	right: -132%;
 	transform: scaleX(-1);
