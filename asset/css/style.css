@@ -15,7 +15,12 @@
 @font-face {font-family: "PierBlackItalic"; src: url(font/PierSans/PierSans-BlackItalic.otf) format("opentype");}
 @font-face {font-family: "PierBold"; src: url(font/PierSans/PierSans-Bold.otf) format("opentype");}
 @font-face {font-family: "PierBoldItalic"; src: url(font/PierSans/PierSans-BoldItalic.otf) format("opentype");}
-
+@font-face {font-family: "PierItalic"; src: url(font/PierSans/PierSans-Italic.otf) format("opentype");}
+@font-face {font-family: "PierLight"; src: url(font/PierSans/PierSans-Light.otf) format("opentype");}
+@font-face {font-family: "PierLightItalic"; src: url(font/PierSans/PierSans-LightItalic.otf) format("opentype");}
+@font-face {font-family: "PierMedium"; src: url(font/PierSans/PierSans-Medium.otf) format("opentype");}
+@font-face {font-family: "PierMediumItalic"; src: url(font/PierSans/PierSans-MediumItalic.otf) format("opentype");}
+@font-face {font-family: "PierRegular"; src: url(font/PierSans/PierSans-Regular.otf) format("opentype");}
 
 
 /*
@@ -192,14 +197,14 @@ body{
 */
 
 #programacion{
-	padding: 80px 0px;
+	padding: 100px 0px;
 	overflow: hidden;
-	/*height: 1600px;*/
 	position: relative;
 }
 
 #programacion .container:first-child:before{
 	content: "< >";
+	font-family: "PierBlack";
 	position: absolute;
 	font-size: 420px;
 	color: #f0f0f0;
@@ -468,6 +473,7 @@ body{
 
 .contenedor-dos:before{
 	content: "</>";
+	font-family: "PierBlack";
 	z-index: -1;
 	position: absolute;
 	font-size: 420px;
