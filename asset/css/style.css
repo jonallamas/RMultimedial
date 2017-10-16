@@ -219,6 +219,13 @@ body{
 	margin-top: 5px;
 }
 
+#programacion .rotacion .diseno-web{
+	color: #ffafd0;
+}
+#programacion .rotacion .programacion{
+	color: #0076ff;
+}
+
 #programacion .subtitulo{
 	font-family: "AleoBold";
 	color: #444;
@@ -402,7 +409,7 @@ body{
     /* Firefox bug - 3D CSS transform, jagged edges */
     outline: 1px solid transparent;
   }
-  .cd-3d-right-side::after, .cd-3d-bottom-side::after {
+  .cd-3d-right-side:after, .cd-3d-bottom-side:after {
     /* darken the right/bottom sides */
     content: '';
     display: block;
