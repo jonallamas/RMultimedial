@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Téc en Realización Multimedial</title>
+	<link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<link rel="stylesheet" href="asset/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+
+	<section id="video3d">
+		<div class="container" id="container">
+			<div class="row" id="scene">
+				<div class="col-sm-6">
+					<img src="img/huevo.png" class="huevo img-responsive layer text-center" alt="" data-depth="0.35">
+					<div class="circulo_huevo layer" data-depth="0.15"></div>
+					<div class="programa">
+						<span>Con la tecnología de</span>
+						<img src="img/logo_blender.png" width="100px;" alt="">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="texto_video3d">
+						<span class="layer" data-depth="0.10">Descubre el mundo del</span>
+						<span class="layer" data-depth="0.20">modelado</span>
+						<span class="layer" data-depth="0.30">y</span>
+						<span class="layer" data-depth="0.15">animaciones</span>
+						<span class="layer" data-depth="0.35">3D</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Parallax -->
+	<script src="asset/js/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+	
+	<script src="asset/bootstrap/js/jquery.min.js"></script>
+	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+	<script src="asset/js/main.js"></script>
+</body>
+</html>
