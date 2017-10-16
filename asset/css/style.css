@@ -992,7 +992,7 @@ body{
 
 #nosotros{
 	height: 650px;
-	padding: 80px 0px;
+	padding: 50px 0px;
 	background-color: #292929;
 	background-image: url('../../img/patron.png');
 	
@@ -1022,23 +1022,24 @@ body{
 	margin-top: 200px;
 	color: white;
 	transform: scale(.9);
+	padding-top: 20px;
 }
 
 #nosotros .cont-caras .cont-img .apodo{
 	font-family: "PierBlack";
 	color: #908882;
-	font-size: 80px;
+	font-size: 110px;
 	position: absolute;
-	top: -65px;
+	top: -90px;
 	opacity: .5;
-	left: 50px;
+	left: -10px;
 	text-transform: uppercase;
 	filter: blur(0px);
 	transition: all 0.1s ease 0s;
 }
 
 #nosotros .joni .apodo{
-	left: 75px;
+	left: 20px !important;
 }
 
 #nosotros .cont-caras .cont-img:hover .apodo{
