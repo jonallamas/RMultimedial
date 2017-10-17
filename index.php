@@ -75,7 +75,7 @@
 						<div class="titulosup">Aprender la magia</div>
 						<div class="tituloinf">de la <span class="amarillo">edición</span></div>
 					</div>
-					<p class="texto_explicacion">Domina el paquete <span class="amarillo">Adobe</span> con programas como after effects, premier, audition, entre otros.</p>
+					<p class="texto_explicacion">Domina el paquete <span class="amarillo">Adobe</span> con programas como After Effects, Premier, Audition, entre otros.</p>
 				</div>
 				<div class="col-sm-4 col-sm-offset-2 explicacion_corto">
 					<h3>Primer°<span class="fondo_h3"></span></h3>
@@ -88,7 +88,7 @@
 							<div class="cargo">Cámara</div>
 							<div class="persona_cargo">
 								<ul class="list-unstyled list-inline">
-									<li>Tania Lago</li>
+									<li>Tania Lagos</li>
 									<li>Hector Oyola</li>
 								</ul>
 							</div>
@@ -365,7 +365,7 @@
 						<img class="alas" src="img/ala.png" alt="">
 					</div>
 					<div class="cont-info text-right">
-						<span class="nombre">Gaston<br>Acuña</span><br>
+						<span class="nombre">Gastón<br>Acuña</span><br>
 						<span class="profesion">Estudiante</span>
 					</div>
 				</div>
@@ -378,7 +378,7 @@
 						<img class="pirata" src="img/pirata.png" alt="">
 					</div>
 					<div class="cont-info">
-						<span class="nombre">Joathan<br>Llamas</span><br>
+						<span class="nombre">Jonathan<br>Llamas</span><br>
 						<span class="profesion">Estudiante</span>
 					</div>
 				</div>
