@@ -1261,6 +1261,28 @@ body{
 }
 
 
+#galeria .modal-content{
+	background-color: transparent;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+#galeria .close:focus, .close:hover{
+	color: #ccc;
+}
+
+#galeria .close{
+	color: #fff;
+	font-size: 50px;
+	line-height: 10px;
+	font-weight: 500;
+	height: 10px;
+	opacity: 1;
+}
+
+#galeria .modal-content img{
+	margin-top: 40px;
+}
 
 
 /*

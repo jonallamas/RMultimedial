@@ -122,9 +122,8 @@
                     </div>
                     <div class="modal-body">
                         <div class="modal-video">
-                            <video width="800px" height="" controls>
-								<source class="video-abierto" src="asset/video/_video-primero.mp4" type="video/mp4">
-							</video>
+                            <!-- <video width="800px" height="" controls><source class="video-abierto" src="asset/video/_video-primero.mp4" type="video/mp4"></video> -->
+                            <iframe width="800" height="450" src="https://www.youtube.com/embed/g21xOSkh3Wo" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -262,6 +261,16 @@
 					<div class="titulo">Los <span class="resaltado">estudiantes</span></div>
 				</div>
 			</div>
+
+			<?php 
+
+				
+				$persona0 = array(
+					'nombre' => 'Jonathan',
+					'materia' => 'Programacion'
+				);
+
+			 ?>
 			
 			<div class="row soga-uno">
 			<?php 
@@ -289,9 +298,10 @@
 			<?php 
 				for ($modal=0; $modal < 8; $modal++) { 
 					echo '<div class="modal fade" id="modal-'.$modal.'">';
-					echo '<div class="modal-dialog">';
+					echo '<div class="modal-dialog modal-lg">';
 					echo '<div class="modal-content">';
 					echo '<div class="modal-body">';
+					echo '<p>'.$persona.$modal['nombre'].'</p>';
 					echo '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
 					echo '<img src="img/galeria/foto_'.$modal.'.jpg" class="img-responsive">';
 					echo '</div>';
