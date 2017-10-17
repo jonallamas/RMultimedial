@@ -262,50 +262,45 @@
 					<div class="titulo">Los <span class="resaltado">estudiantes</span></div>
 				</div>
 			</div>
+			
 			<div class="row soga-uno">
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
+			<?php 
+				for ($muestra=0; $muestra <= 3; $muestra++) { 
+					echo '<div class="col-sm-3">';
+					echo '	<a href="#modal-'.$muestra.'" data-toggle="modal" class="polaroid">';
+					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$muestra.'.jpg)"></div>';
+					echo '	</a>';
+					echo '</div>';
+				}
+			 ?>
 			</div>
 			<div class="row soga-dos">
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="polaroid">
-						<div class="muestra"></div>
-					</div>
-				</div>
+			<?php 
+				for ($pola=4; $pola <= 7; $pola++) { 
+					echo '<div class="col-sm-3">';
+					echo '	<a href="#modal-'.$pola.'" data-toggle="modal" class="polaroid">';
+					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$pola.'.jpg")"></div>';
+					echo '	</a>';
+					echo '</div>';
+				}
+			 ?>
 			</div>
+
+			<?php 
+				for ($modal=0; $modal < 8; $modal++) { 
+					echo '<div class="modal fade" id="modal-'.$modal.'">';
+					echo '<div class="modal-dialog">';
+					echo '<div class="modal-content">';
+					echo '<div class="modal-body">';
+					echo '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
+					echo '<img src="img/galeria/foto_'.$modal.'.jpg" class="img-responsive">';
+					echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					echo '</div>';
+				} 
+			?>
+
 		</div>
 		<div class="piso"></div>
 		<div class="color"></div>

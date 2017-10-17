@@ -1153,8 +1153,9 @@ body{
 	width: 100%;
 	height: 164px;
 	bottom: -100px;
-	background-color: #262626;
+	background-color: #292929;
 	z-index: 1;
+	background-image: url('../../img/patron.png');
 }
 
 #galeria .soga-uno:before{
