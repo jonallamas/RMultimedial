@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Téc en Realización Multimedial</title>
+	<title>Téc. en Realización Multimedial</title>
 	<link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="asset/css/style.css">
 	<link rel="stylesheet" href="asset/fontawesome/css/font-awesome.min.css">
@@ -22,7 +22,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					<p class="info_carrera text-center">Es un profesional especializado en el área multimedia en los distintos medios de la hipercomunicación y la hipermedia- con conocimientos de los procesos técnicos y de los recursos expresivos. Por otra parte es un profesional polivalente capacitado para poner en escena un proyecto, un plan de trabajo y un presupuesto previo, con equipos interciciplinarios</p>
+					<p class="info_carrera text-center">Es un profesional especializado en el área multimedia en los distintos medios de la hipercomunicación y la hipermedia- con conocimientos de los procesos técnicos y de los recursos expresivos. Por otra parte es un profesional polivalente capacitado para poner en escena un proyecto, un plan de trabajo y un presupuesto previo, con equipos interdiciplinarios</p>
 				</div>
 			</div>
 			<div class="row">
@@ -52,7 +52,7 @@
 						<span class="layer" data-depth="0.10">Descubre el mundo del</span>
 						<span class="layer" data-depth="0.20">modelado</span>
 						<span class="layer" data-depth="0.30">y</span>
-						<span class="layer" data-depth="0.15">animaciones</span>
+						<span class="layer" data-depth="0.15">animación</span>
 						<span class="layer" data-depth="0.35">3D</span>
 					</div>
 				</div>
@@ -145,7 +145,7 @@
 					<ul>
 						<li><span class="pintura"></span>Web responsive</li>
 						<li><span class="pintura"></span>Usabilidad y funcionalidad</li>
-						<li><span class="pintura"></span>Diseños estáticos y dinamicos</li>
+						<li><span class="pintura"></span>Diseños estáticos y dinámicos</li>
 					</ul>
 				</div>
 
@@ -181,7 +181,7 @@
 						<li><span class="pintura"></span>Bootstrap</li>
 						<li><span class="pintura"></span>Codeigniter</li>
 						<li><span class="pintura"></span>Framework 7</li>
-						<li><span class="pintura"></span>Y muchos mas</li>
+						<li><span class="pintura"></span>Y muchos más</li>
 					</ul>
 				</div>
 			</div>
@@ -261,16 +261,6 @@
 					<div class="titulo">Los <span class="resaltado">estudiantes</span></div>
 				</div>
 			</div>
-
-			<?php 
-
-				
-				$persona0 = array(
-					'nombre' => 'Jonathan',
-					'materia' => 'Programacion'
-				);
-
-			 ?>
 			
 			<div class="row soga-uno">
 			<?php 
@@ -278,6 +268,34 @@
 					echo '<div class="col-sm-3">';
 					echo '	<a href="#modal-'.$muestra.'" data-toggle="modal" class="polaroid">';
 					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$muestra.'.jpg)"></div>';
+					echo '<div class="nombre_alumno">';
+					switch ($muestra) {
+						case 0:
+							echo 'Gastón Acuña';
+							break;
+						case 1:
+							echo 'Jere';
+							break;
+						case 2:
+							echo 'Jonathan Llamas';
+							break;
+						case 3:
+							echo 'Jere';
+							break;
+						case 4:
+							echo 'Jere';
+							break;
+						case 5:
+							echo 'Jonathan Llamas';
+							break;
+						case 6:
+							echo 'Jere';
+							break;
+						case 7:
+							echo 'Gastón Acuña';
+							break;
+					}
+					echo '</div>';
 					echo '	</a>';
 					echo '</div>';
 				}
@@ -289,6 +307,22 @@
 					echo '<div class="col-sm-3">';
 					echo '	<a href="#modal-'.$pola.'" data-toggle="modal" class="polaroid">';
 					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$pola.'.jpg")"></div>';
+					echo '<div class="nombre_alumno">';
+					switch ($pola) {
+						case 4:
+							echo 'Jere';
+							break;
+						case 5:
+							echo 'Jonathan Llamas';
+							break;
+						case 6:
+							echo 'Jere';
+							break;
+						case 7:
+							echo 'Gastón Acuña';
+							break;
+					}
+					echo '</div>';
 					echo '	</a>';
 					echo '</div>';
 				}
@@ -301,7 +335,6 @@
 					echo '<div class="modal-dialog modal-lg">';
 					echo '<div class="modal-content">';
 					echo '<div class="modal-body">';
-					echo '<p>'.$persona.$modal['nombre'].'</p>';
 					echo '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
 					echo '<img src="img/galeria/foto_'.$modal.'.jpg" class="img-responsive">';
 					echo '</div>';
@@ -375,8 +408,6 @@
 	
 	<script src="asset/bootstrap/js/jquery.min.js"></script>
 	<script src="asset/bootstrap/js/bootstrap.min.js"></script>
-	<script src="asset/js/main.js"></script>
-	<script src="asset/js/jqfloat.js"></script>
 
 	<script>
 		var baloon = $('#float');
