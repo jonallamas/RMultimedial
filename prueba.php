@@ -16,7 +16,7 @@
 				for ($muestra=0; $muestra <= 3; $muestra++) { 
 					echo '<div class="col-sm-3">';
 					echo '	<a href="#modal-'.$muestra.'" data-toggle="modal" class="polaroid">';
-					echo '		<div class="muestra"></div>';
+					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$muestra.'.jpg)"></div>';
 					echo '	</a>';
 					echo '</div>';
 				}
@@ -24,10 +24,10 @@
 			</div>
 			<div class="row soga-dos">
 			<?php 
-				for ($pola=5; $pola <= 8; $pola++) { 
+				for ($pola=4; $pola <= 7; $pola++) { 
 					echo '<div class="col-sm-3">';
 					echo '	<a href="#modal-'.$pola.'" data-toggle="modal" class="polaroid">';
-					echo '		<div class="muestra"></div>';
+					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$pola.'.jpg")"></div>';
 					echo '	</a>';
 					echo '</div>';
 				}
