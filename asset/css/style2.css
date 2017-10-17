@@ -186,15 +186,4 @@
 	filter: grayscale(1);
 }
 
-#copyright{
-	padding: 10px 0px;
-	font-family: 'AleoLight', sans-serif;
-	text-transform: uppercase;
-	font-size: 9px;
-	color: #eee;
-	background-color: #232323;
-}
-#copyright i{
-	color: #e33a6e;
-	margin: 0px 5px;
-}
+
