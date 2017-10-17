@@ -274,22 +274,22 @@
 							echo 'Gastón Acuña';
 							break;
 						case 1:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 2:
 							echo 'Jonathan Llamas';
 							break;
 						case 3:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 4:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 5:
 							echo 'Jonathan Llamas';
 							break;
 						case 6:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 7:
 							echo 'Gastón Acuña';
@@ -303,20 +303,20 @@
 			</div>
 			<div class="row soga-dos">
 			<?php 
-				for ($pola=4; $pola <= 7; $pola++) { 
+				for ($muestra=4; $muestra <= 7; $muestra++) { 
 					echo '<div class="col-sm-3">';
-					echo '	<a href="#modal-'.$pola.'" data-toggle="modal" class="polaroid">';
-					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$pola.'.jpg")"></div>';
+					echo '	<a href="#modal-'.$muestra.'" data-toggle="modal" class="polaroid">';
+					echo '		<div class="muestra" style="background-image: url(img/galeria/foto_'.$muestra.'.jpg")"></div>';
 					echo '<div class="nombre_alumno">';
-					switch ($pola) {
+					switch ($muestra) {
 						case 4:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 5:
 							echo 'Jonathan Llamas';
 							break;
 						case 6:
-							echo 'Jere';
+							echo 'Jeremías Pringles';
 							break;
 						case 7:
 							echo 'Gastón Acuña';
