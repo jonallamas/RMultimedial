@@ -282,18 +282,6 @@
 						case 3:
 							echo 'Jeremías Pringles';
 							break;
-						case 4:
-							echo 'Jeremías Pringles';
-							break;
-						case 5:
-							echo 'Jonathan Llamas';
-							break;
-						case 6:
-							echo 'Jeremías Pringles';
-							break;
-						case 7:
-							echo 'Gastón Acuña';
-							break;
 					}
 					echo '</div>';
 					echo '	</a>';
@@ -313,13 +301,13 @@
 							echo 'Jeremías Pringles';
 							break;
 						case 5:
-							echo 'Jonathan Llamas';
+							echo 'Hector Oyola';
 							break;
 						case 6:
 							echo 'Jeremías Pringles';
 							break;
 						case 7:
-							echo 'Gastón Acuña';
+							echo 'Hector Oyola';
 							break;
 					}
 					echo '</div>';
